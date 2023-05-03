@@ -1,4 +1,4 @@
-# jieun's dessert
+# jieun's dessert (1인 프로젝트)
 
 리액트와 인터렉션을 연습하기 위해 만든 프로젝트 입니다. 
 html, css, JS(Next.js, Jquery, Vanilla js)을 사용하여 구현하였으며 그 밖에 다른 라이브러리들을 사용하였습니다. 
