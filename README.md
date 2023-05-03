@@ -1,14 +1,19 @@
 # jieun's dessert
 
 리액트와 인터렉션을 연습하기 위해 만든 프로젝트 입니다. 
-Next.js, Jquery, Vanilla js을 사용하여 구현하였으며 그 밖에 다른 라이브러리들을 사용하였습니다. 
+html, css, JS(Next.js, Jquery, Vanilla js)을 사용하여 구현하였으며 그 밖에 다른 라이브러리들을 사용하였습니다. 
 
-메인이 되는 화면입니다.
-<img src="screenshot-main.jpg"  width="700" height="370"> 
+최종적인 결과물입니다. <br> <br>
+<img src="dessert.gif"  width="480" height="300"> 
 
+메인이 되는 화면입니다. <br> <br>
+<img src="screenshot-main.jpg"  width="480" height="300"> <br>
 
-<img src="screenshot-main.jpg"  width="700" height="370">
-<img src="screenshot-main.jpg"  width="700" height="370">
+첫번째 콘텐츠 화면입니다. <br> <br>
+<img src="screenshot-sub1.jpg"  width="480" height="300"> <br>
+
+두번째 콘텐츠 화면입니다. <br> <br>
+<img src="screenshot-sub2.jpg"  width="480" height="300"> <br>
 
 
 
