@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jieun's content</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./index.css">
+	<script src="./js/jquery.js"></script>
+	<script src="./js/TweenMax.js"></script>
+	<script src="https://rawgit.com/tuupola/jquery_lazyload/2.x/lazyload.js"></script>
+	<script src="./js/candle.js"></script>
+	<script type="text/javascript" src="/dist/bundle.js"></script>
+
+
+</head>
+<body>
+	<script src="index_bundle.js"></script>
+		<main>
+			<div class="cake active">
+				<canvas id="canvas1" width="549" height="1040"></canvas>
+				<canvas id="canvas2" width="549" height="1040"></canvas>
+				<canvas id="canvas3" width="549" height="1040"></canvas>
+			</div>
+			<section class="titleArea active" style="visibility: inherit; opacity: 1;">
+				<div class="contWrap">
+					<div style="transform: translate(0px, 0px);">						
+						<h1 title="지은디저트"></h1>
+						<p>
+							지은이의 디저트 가게 (마카롱 & 케이크)
+						</p>
+						<button class="btn">시작</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="cont cont_01" data-index="1">
+				<div class="contWrap" style="min-height: 1040px;">
+					<div class="holeItem lazyload" data-src="./images/flour.png"></div>
+					<div class="hole lazyload" data-src="./images/con_01_bg.jpg"></div>
+					<div class="arm"><img src="./images/arm.png" alt="팔"></div>
+					<div class="hiddenItem lazyload" data-src="./images/dessert.png"></div>
+					<div class="textItem">
+						<p>"밀가루를 클릭하세요!"</p>
+						<p class="info">보라색 버튼을 클릭하세요.</p>
+					</div>
+					<div class="arr_down">
+						<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+							<title>스크롤하세요.</title>
+							<path xmlns="https://www.w3.org/2000/svg" fill="#fff" d="M5.3 8L3 10.1l9.3 9.3 9.4-9.3L19.4 8l-7.1 7z"></path>dkd
+						</svg>
+					</div>
+					<button type="button" class="btn_play"></button>
+				</div>
+				<div class="mv_info" style="margin-top: 250px; padding-bottom: 650px;">
+					<div class="innerWrap">
+						<h1 class="m_desert">마카롱<strong class="m_desert2">macaron</strong></h1>
+						<p class="info_spec">
+							<span>마카롱 영어: macaron, 프랑스어: macaron</span>
+						</p>
+						<div class="story_area">
+							<div class="img_wrap">
+								<img data-src="./images/macaron_01.jpeg" class="lazyload" alt="마카롱 1번 사진">
+							</div>
+							<p>이탈리아에서 기원한 쿠키 중 하나. 프랑스에서 기원한 쿠키로 오해하는 사람이 많다. 널리 알려진 것은 머랭으로 만든 쿠키 2개 사이에 크림이 포개진 것이다.</p>
+							<div class="img_wrap">
+								<img data-src="./images/macaron_02.jpg" class="lazyload" alt="마카롱 2번 사진">
+							</div>
+							<p>맛은 코크의 질감과 사이에 끼워둔 크림에 따라 결정되는데, 맛있는 코크는 겉은 바삭하면서도 안은 촉촉하며 쫀득하고 부드러워야 한다. 바삭한 식감과 쫀득한 식감이 크림과 조화를 이뤄야 맛있는 마카롱이라 할 수 있다. 못만든 마카롱은 겉은 질기거나 딱딱하고, 수분기가 없이 건조하다. 그리고 안은 쫀득하지 않고 끈적이면서 치아에 달라붙는다. </p>
+							<div class="img_wrap">
+								<img data-src="./images/macaron_03.jpg" class="lazyload" alt="마카롱 3번 사진">
+							</div>
+							<p>개인이 운영하는 여러 제과점과 스타벅스 같은 체인점에서도 판매하고 있어 쉽게 구입할 수 있으나 그 맛과 크기, 가격은 상당한 차이를 보인다. 저렴한 것은 1,000원 정도에도 구매할 수 있으나, 고급품은 1개에 3,000원이 넘어간다. </p>
+							<!-- <p>영상 미리보기</p> -->
+							<div class="mv_wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/p0krCllaPi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="cont cont_02" data-index="2">
+				<div class="contWrap lazyload" data-src="./images/cake_bg.jpg" style="min-height: 1040px;">
+					<div class="cakecon">
+						<div class="candle_body">
+						<div><img id="candle" src="./images/candle_on.png" class="on" alt="촛불 온" onclick="hideImage()"></div>
+						</div>
+						<div class="candle"><img data-src="./images/candle_body.png" class="lazyload" alt="촛불"></div>
+						<div class="cakecon_body">
+							<img src="./images/cake_con.png" alt="케이크">
+						</div>
+					</div>
+					<div class="textItem">
+						<p>"소원을 빌어보세요!"</p>
+						<p class="info pc_item">촛불을 눌러 끄세요</p>
+						<p class="info m_item">촛불을 눌러 끄세요</p>
+					</div>
+				</div>
+				<div class="mv_info" style="margin-top: 250px; padding-bottom: 650px;">
+					<div class="innerWrap">
+						<h1 class="m_desert">케이크<strong class="m_desert2">cake</strong></h1>
+						<p class="info_spec">
+							<span>밀가루, 계란, 버터, 우유, 설탕 등으로 만들며 대개의 경우 식감이 부드럽다.</span>
+						</p>
+						<div class="story_area">
+							<div class="img_wrap">
+								<img data-src="./images/cake_con2_01.jpg" class="lazyload" alt="케이크">
+							</div>
+							<p>
+								사실 'cake'는 사람들이 케이크라고 생각하는 음식에서 '시트' 부분에 해당한다.[1] 즉, 생크림, 딸기, 과자, 과일 등은 모두 장식으로 올라가는 것이다. 흔히 생각하는 모양새인 케이크의 정식 명칭은 보통 데코레이션 케이크. 그 외에 롤케이크, 팬케이크 등 여러 가지가 있지만, 왠지 이 데코레이션 케이크가 케이크의 표준이 되어버렸다.
+							</p>
+							<div class="img_wrap">
+								<img data-src="./images/cake_con2_02.jpg" class="lazyload" alt="케이크">
+							</div>
+							<p>
+								의외로 제대로 된 오븐이 없어도 만들 수 있는 음식이다. 전기압력밥솥이나 전자렌지만 있어도 웬만한 종류의 케이크는 얼마든지 맛있게 만들어 낼 수 있다. 다만 제대로 된 제누아즈나 시폰 케이크 같은 걸 만들 수 있는 건 아니지만, 좀 가벼운 파운드 케이크 같은 정도로는 충분히 가능하다.
+							</p>
+							<div class="img_wrap">
+								<img data-src="./images/cake_con2_03.jpg" class="lazyload" alt="케이크">
+							</div>
+							<p> 설탕이 없던 과거엔 꿀이나 사탕수수/사탕무 즙, 메이플 시럽, 감초, 산딸기, 건포도, 과일 등 어찌됐든 단맛이 나는 것들을 사용해 만든 잡탕 빵이나 파이에 가까운 물건들이 만들어졌었다. 이후 여러 가공이 용이한 정제 설탕이 15~16세기 들어 제과에 쓰여질 만큼 대중화되면서 현재 존재하는 대부분의 레시피가 등장했다.</p>
+							<div class="mv_wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/7ANPnTmerF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<div class="flash"></div>
+			<audio id="heartSound"></audio> <audio id="darkSound" ></audio> <audio id="ghostSound" ></audio> <audio id="breatheSound" ></audio>
+			<audio id="bgmSound" ></audio> <audio id="bgm2Sound" ></audio> <audio id="monsterSound" ></audio> <audio id="busanSound" ></audio>
+			<audio id="shutterSound" ></audio> <audio id="gidamSound"></audio> <audio id="saw"  ></audio> <audio id="gonjiamSound"></audio>
+	
+		<div id="bottom">
+			<div class="bottomWrap">
+				<div class="byline_wrap">
+					<div class="byline">
+						<p class="publish">발행일 : 2023. 04. 27</p>
+						<div class="inner_cont">
+							<ul>
+								<li><strong>기획 & 디자인 & 개발 </strong><span>송지은 (1인 프로젝트) </span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footerWrap clearfx">
+				<div class="footerCont">
+					<p>
+						이 콘텐츠는 인터렉션 연습을 위해 만든 콘텐츠입니다. 
+					</p>
+				</div>
+			</div>
+		</footer>
+	<div style="display: none; visibility: hidden;">
+	<noscript></noscript>
+	</div>
+
+</body>
+</html>
